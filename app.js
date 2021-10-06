@@ -1,14 +1,14 @@
-var heading = document.getElementById('heading')
-heading.innerHTML="this is a styled heading" 
-var body = document.querySelector('body')
-heading.style = "color:red; font-size:2rem"
-console.log(heading)
-console.log(heading.classList)
-console.log(heading.classList.add('five'))
-console.log(heading.classList.remove('one'))
-console.log(heading.classList) 
-body.classList.add('dark')
-
-
+var list = document.querySelector('ul')
+var arr = ['go to gym', 'eat', 'work']
+for(var i=0;i<arr.length;i++){
+ 
+    var element = document.createElement('li')
+    var textnode = document.createTextNode(arr[i]) 
+    console.log(element)
+    element.appendChild(textnode)
+    console.log(element) 
+    list.appendChild(element)
+    
+}
 
 
