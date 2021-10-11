@@ -1,33 +1,16 @@
-const a = document.querySelectorAll('input')[0]
-const b = document.querySelectorAll('input')[1] 
-const add = document.querySelector('#add')
-const subract = document.querySelector('#sub') 
-const result = document.querySelector('.result') 
-// const addition = ()=>{
-//    const results = parseInt(a.value) + parseInt(b.value) 
-//    console.log(results) 
-//    result.innerHTML = results
-// } 
-// const subractiom = ()=>{
-//     const results = parseInt(a.value) - parseInt(b.value) 
-//     console.log(results) 
-//     result.innerHTML = results
-//  } 
-const fun = (event, operation)=>{
-   if(operation=='add'){ 
-      console.log(event.target)
-      output = parseInt(a.value) + parseInt(b.value) 
-      result.innerHTML = output  
-   } 
-   else {
-      output = parseInt(a.value) * parseInt(b.value) 
-      result.innerHTML = output
-   }
-}
+const button = document.querySelector('button')
+const input = document.querySelector('input')
+const div = document.querySelector('div')
 
-add.addEventListener('click', (event) =>{
-  return fun(event, 'add')
-}) 
-subract.addEventListener('click', (event)=> {
-   return fun(subract)
-})
+// button.addEventListener('click', (req, res) => { 
+//     localStorage.setItem('input', [1, 2, 3, 4]) 
+//         div.innerHTML = input.value
+// }) 
+ // console.log(localStorage.getItem('input')) 
+ const arr = [1, 2, 3, 4, 5] 
+ const val = JSON.stringify(arr) 
+ console.log(val) 
+ localStorage.setItem('aj', val) 
+ console.log(JSON.parse(localStorage.getItem('aj')))
+
+
