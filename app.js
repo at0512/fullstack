@@ -1,16 +1,7 @@
-const button = document.querySelector('button')
-const input = document.querySelector('input')
-const div = document.querySelector('div')
-
-// button.addEventListener('click', (req, res) => { 
-//     localStorage.setItem('input', [1, 2, 3, 4]) 
-//         div.innerHTML = input.value
-// }) 
- // console.log(localStorage.getItem('input')) 
- const arr = [1, 2, 3, 4, 5] 
- const val = JSON.stringify(arr) 
- console.log(val) 
- localStorage.setItem('aj', val) 
- console.log(JSON.parse(localStorage.getItem('aj')))
-
+const path = require('path') 
+// console.log(path.resolve('./app.js'))  
+// console.log(path.extname('./app.js')) 
+ console.log(path.dirname('./temp/app.js'))  
+//  console.log(__dirname)
+console.log(path.join(__dirname, 'app.js'))
 
