@@ -1,7 +1,6 @@
-const path = require('path') 
-// console.log(path.resolve('./app.js'))  
-// console.log(path.extname('./app.js')) 
- console.log(path.dirname('./temp/app.js'))  
-//  console.log(__dirname)
-console.log(path.join(__dirname, 'app.js'))
-
+const fs = require('fs')
+// console.log(fs) 
+fs.readFile('./text.txt',(error, data) =>{
+    if(error) console.log(error) 
+    else console.log(data.toString())
+}) 
